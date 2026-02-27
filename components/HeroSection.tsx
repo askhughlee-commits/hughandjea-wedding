@@ -53,7 +53,7 @@ export default function HeroSection() {
       {/* Background Image with Parallax */}
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
         <Image
-          src={withBasePath(WEDDING_DATA.images.img4)}
+          src={withBasePath(WEDDING_DATA.images.main)}
           alt="Wedding main photo"
           fill
           priority
