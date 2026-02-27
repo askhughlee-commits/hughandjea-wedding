@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { gsap, ScrollTrigger } from "@/lib/gsap/register";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { withBasePath } from "@/lib/asset";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
