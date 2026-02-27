@@ -1,16 +1,17 @@
 import type { NextConfig } from "next";
 
+const repo = "hughandjea-wedding";
+
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+
+  // GitHub Pages subpath 대응
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+
   images: {
-    qualities: [75, 85, 90],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-    ],
+    unoptimized: true,
   },
 };
 
