@@ -57,12 +57,10 @@ export default function Navigation() {
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
             className="fixed inset-0 z-[60] text-white flex flex-col justify-center items-center bg-black"
           >
-            <Image
-              src={WEDDING_DATA.images.background}
+            <img
+              src={`/hughandjea-wedding${WEDDING_DATA.images.background}`}
               alt="Menu Background"
-              fill
-              className="object-cover"
-              priority
+              className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-black/50" />
 

@@ -51,16 +51,10 @@ export default function HeroSection() {
     >
       {/* Background Image with Parallax */}
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
-        <Image
-          src={WEDDING_DATA.images.main}
+        <img
+          src={`/hughandjea-wedding${WEDDING_DATA.images.main}`}
           alt="Wedding main photo"
-          fill
-          priority
-          quality={90}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AEJUDHzD/9k="
-          className="object-cover object-center"
-          sizes="100vw"
+          className="h-full w-full object-cover object-center"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
