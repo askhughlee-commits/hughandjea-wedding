@@ -1,39 +1,39 @@
 export const WEDDING_DATA = {
   // 신랑신부 정보
   groom: {
-    name: "김민수",
+    name: "이혁기",
     phone: "010-0000-0000",
     account: {
       bank: "샘플은행",
       accountNumber: "1234-56-7890123",
-      depositor: "김민수",
+      depositor: "이혁기",
     },
     parents: {
       father: {
-        name: "김철수",
+        name: "이병익",
         // phone: "010-1111-1111"
       },
       mother: {
-        name: "이영희",
+        name: "김미숙",
         // phone: "010-2222-2222"
       },
     },
   },
   bride: {
-    name: "박지은",
+    name: "최영재",
     phone: "010-0000-0001",
     account: {
       bank: "샘플은행",
       accountNumber: "9876-54-3210987",
-      depositor: "박지은",
+      depositor: "최영재",
     },
     parents: {
       father: {
-        name: "박상현",
+        name: "최재천",
         phone: "010-3333-3333",
       },
       mother: {
-        name: "최미영",
+        name: "하경심",
         phone: "010-4444-4444",
       },
     },
@@ -41,7 +41,7 @@ export const WEDDING_DATA = {
   parents: {
     groom: {
       father: {
-        name: "김철수",
+        name: "이병익",
         // phone: "010-1111-1111",
         // account: {
         //     bank: "샘플은행",
@@ -50,13 +50,13 @@ export const WEDDING_DATA = {
         // }
       },
       mother: {
-        name: "이영희",
+        name: "김미숙",
         // phone: "010-2222-2222",
       },
     },
     bride: {
       father: {
-        name: "박상현",
+        name: "최재천",
         phone: "010-3333-3333",
         // account: {
         //     bank: "샘플은행",
@@ -65,7 +65,7 @@ export const WEDDING_DATA = {
         // }
       },
       mother: {
-        name: "최미영",
+        name: "하경심",
         phone: "010-4444-4444",
       },
     },
@@ -74,10 +74,10 @@ export const WEDDING_DATA = {
   // 예식 정보
   date: "2026.12.25 SAT PM 2:00",
   venue: {
-    name: "그랜드 호텔 연회장",
-    address: "서울특별시 강남구 테헤란로 123",
+    name: "셀럼앤어셈 xxxx",
+    address: "서울특별시 강남구 xxxx 123",
     phone: "02-0000-0000",
-    date: "2026년 12월 25일 토요일 오후 2시",
+    date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
       lat: 37.5665,
       lng: 126.978,
@@ -98,19 +98,19 @@ export const WEDDING_DATA = {
       appTitle: "Wedding Invitation",
     },
     hero: {
-      groom: "민수",
-      bride: "지은",
-      date: "2026.12.25",
-      time: "SAT PM 2:00",
-      location: "그랜드 호텔 연회장",
+      groom: "혁기",
+      bride: "영재",
+      date: "2026.06.14",
+      time: "SUN PM 2:00",
+      location: "셀럼앤어셈 xxx",
     },
     intro: {
       eyebrow: "소중한 분들을 초대합니다",
       title: "INVITATION",
       mainText:
         "서로가 마주보며 다져온 사랑을<br />이제 함께 한 곳을 바라보며<br />걸어갈 수 있는 큰 사랑으로 키우고자 합니다.<br /><br />저희 두 사람이 사랑의 이름으로<br />지켜나갈 수 있게 앞날을<br />축복해 주시면 감사하겠습니다.",
-      groomName: "김민수",
-      brideName: "박지은",
+      groomName: "이혁기",
+      brideName: "최영재",
       groomParents: "의 장남",
       brideParents: "의 장녀",
       groomLabel: "신랑",
