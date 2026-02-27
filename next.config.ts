@@ -1,16 +1,15 @@
 import type { NextConfig } from "next";
 
-const repo = "hughandjea-wedding";
-const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""; // 없으면 로컬은 ""로 빌드됨
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
 
-  ...(isProd
+  ...(basePath
     ? {
-      basePath: `/${repo}`,
-      assetPrefix: `/${repo}/`,
+      basePath,
+      assetPrefix: `${basePath}/`,
     }
     : {}),
 
