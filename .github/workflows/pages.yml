@@ -18,21 +18,37 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # ✅ Node 먼저
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
 
+      # ✅ pnpm 설치
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
+          run_install: false
 
+      # ✅ pnpm 캐시 (선택이지만 안정)
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store
+
+      # ✅ 이제 pnpm 사용 가능
       - name: Install
         run: pnpm install --frozen-lockfile
 
@@ -52,6 +68,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy
         id: deployment
