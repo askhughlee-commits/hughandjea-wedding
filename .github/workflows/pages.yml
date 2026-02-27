@@ -55,6 +55,7 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_KAKAO_APP_KEY: ${{ secrets.NEXT_PUBLIC_KAKAO_APP_KEY }}
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
         run: pnpm build
 
       - name: Upload

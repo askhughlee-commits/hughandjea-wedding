@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { withBasePath } from "@/lib/asset";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,10 +58,12 @@ export default function Navigation() {
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
             className="fixed inset-0 z-[60] text-white flex flex-col justify-center items-center bg-black"
           >
-            <img
-              src={`/hughandjea-wedding${WEDDING_DATA.images.background}`}
+            <Image
+              src={withBasePath(WEDDING_DATA.images.background)}
               alt="Menu Background"
-              className="h-full w-full object-cover"
+              fill
+              className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/50" />
 

@@ -51,10 +51,13 @@ export default function HeroSection() {
     >
       {/* Background Image with Parallax */}
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
-        <img
-          src={`/hughandjea-wedding${WEDDING_DATA.images.main}`}
+        <Image
+          src={withBasePath(WEDDING_DATA.images.main)}
           alt="Wedding main photo"
-          className="h-full w-full object-cover object-center"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
