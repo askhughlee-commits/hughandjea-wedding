@@ -2,26 +2,26 @@ export const WEDDING_DATA = {
   // 신랑신부 정보
   groom: {
     name: "이혁기",
-    phone: "010-0000-0000",
+    phone: "010-2639-1928",
     account: {
-      bank: "샘플은행",
-      accountNumber: "1234-56-7890123",
+      bank: "우리은행",
+      accountNumber: "1002-361-300008",
       depositor: "이혁기",
     },
     parents: {
       father: {
         name: "이병익",
-        // phone: "010-1111-1111"
+        phone: "010-3228-0214"
       },
       mother: {
         name: "김미숙",
-        // phone: "010-2222-2222"
+        phone: "010-4738-0214"
       },
     },
   },
   bride: {
     name: "최영재",
-    phone: "010-0000-0001",
+    phone: "010-9340-7520",
     account: {
       bank: "샘플은행",
       accountNumber: "9876-54-3210987",
@@ -30,11 +30,11 @@ export const WEDDING_DATA = {
     parents: {
       father: {
         name: "최재천",
-        phone: "010-3333-3333",
+        phone: "010-6542-4050",
       },
       mother: {
         name: "하경심",
-        phone: "010-4444-4444",
+        phone: "010-9722-2374",
       },
     },
   },
@@ -42,22 +42,22 @@ export const WEDDING_DATA = {
     groom: {
       father: {
         name: "이병익",
-        // phone: "010-1111-1111",
+        // phone: "010-3228-0214",
         // account: {
         //     bank: "샘플은행",
         //     accountNumber: "1002-123-456789",
-        //     depositor: "김철수"
+        //     depositor: "이병익"
         // }
       },
       mother: {
         name: "김미숙",
-        // phone: "010-2222-2222",
+        // phone: "010-4738-0214",
       },
     },
     bride: {
       father: {
         name: "최재천",
-        phone: "010-3333-3333",
+        phone: "010-6542-4050",
         // account: {
         //     bank: "샘플은행",
         //     accountNumber: "123-45-6789012",
@@ -66,28 +66,28 @@ export const WEDDING_DATA = {
       },
       mother: {
         name: "하경심",
-        phone: "010-4444-4444",
+        phone: "010-9722-2374",
       },
     },
   },
 
   // 예식 정보
-  date: "2026.12.25 SAT PM 2:00",
+  date: "2026.06.14 SUN PM 2:00",
   venue: {
-    name: "셀럼앤어셈 xxxx",
-    address: "서울특별시 강남구 xxxx 123",
-    phone: "02-0000-0000",
+    name: "셀럼앤어셈 / 퓨처스타즈",
+    address: "서울특별시 강남구 언주로 711",
+    phone: "02-545-2222",
     date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
-      lat: 37.5665,
-      lng: 126.978,
+      lat: 37.5173,
+      lng: 127.0341,
     },
   },
 
   // UI 텍스트
   content: {
     navigation: {
-      home: "홈",
+      home: "HOME",
       intro: "초대합니다",
       venue: "오시는 길",
       transport: "교통안내",
@@ -102,7 +102,7 @@ export const WEDDING_DATA = {
       bride: "영재",
       date: "2026.06.14",
       time: "SUN PM 2:00",
-      location: "셀럼앤어셈 xxx",
+      location: "셀럼앤어셈 / 퓨처스타즈",
     },
     intro: {
       eyebrow: "소중한 분들을 초대합니다",
@@ -127,7 +127,7 @@ export const WEDDING_DATA = {
       title: "교통안내",
       parking: {
         title: "주차",
-        desc: "호텔 지하주차장 B1~B3층 이용 가능",
+        desc: "예식장 지하주차장 B1~B3층 이용 가능",
       },
     },
     contact: {
