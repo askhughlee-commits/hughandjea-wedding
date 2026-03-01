@@ -42,7 +42,7 @@ export const WEDDING_DATA = {
     groom: {
       father: {
         name: "이병익",
-        // phone: "010-3228-0214",
+        phone: "010-3228-0214",
         // account: {
         //     bank: "샘플은행",
         //     accountNumber: "1002-123-456789",
@@ -51,7 +51,7 @@ export const WEDDING_DATA = {
       },
       mother: {
         name: "김미숙",
-        // phone: "010-4738-0214",
+        phone: "010-4738-0214",
       },
     },
     bride: {
@@ -75,7 +75,7 @@ export const WEDDING_DATA = {
   date: "2026.06.14 SUN PM 2:00",
   venue: {
     name: "셀럼앤어셈 / 퓨처스타즈",
-    address: "서울특별시 강남구 언주로 711",
+    address: "서울특별시 강남구 언주로 711 건설회관 별관 1,2층",
     phone: "02-545-2222",
     date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
