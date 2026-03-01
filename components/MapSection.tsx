@@ -13,7 +13,7 @@ export default function MapSection() {
 
   return (
     <div className="w-full soft-card overflow-hidden h-[360px]">
-      <Map center={venue.coordinates} style={{ width: "100%", height: "100%" }}>
+      <Map center={venue.coordinates} level={4} style={{ width: "100%", height: "100%" }}>
         <MapMarker position={venue.coordinates}>
           <div
             style={{
