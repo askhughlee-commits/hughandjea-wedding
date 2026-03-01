@@ -18,6 +18,7 @@ export default function TransportSection() {
         </ScrollSection>
 
         <ScrollSection animation="fade-up" delay={0.1}>
+          {/* Parking */}
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center gap-2 mb-3">
               <svg
@@ -46,6 +47,38 @@ export default function TransportSection() {
               }}
             />
           </div>
+
+          {/* ✅ 추가: Public Transport */}
+          <ScrollSection animation="fade-up" delay={0.2}>
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center gap-2 mb-3">
+                {/* Subway icon */}
+                <svg
+                className="w-5 h-5 text-[var(--color-primary)]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                viewBox="0 0 24 24"
+                >
+                <rect x="5" y="3" width="14" height="14" rx="2" />
+                <path strokeLinecap="round" d="M8 21l2-2m6 2l-2-2" />
+                <circle cx="9" cy="9" r="1" />
+                <circle cx="15" cy="9" r="1" />
+                <path strokeLinecap="round" d="M7 13h10" />
+                </svg>
+
+                <h3 className="text-lg heading-serif text-[var(--color-text)]">
+                  {WEDDING_DATA.content.transport.publicTransport?.title}
+                </h3>
+              </div>
+              <p
+              className="text-sm text-[var(--color-text-light)]"
+              dangerouslySetInnerHTML={{
+                __html: WEDDING_DATA.content.transport.publicTransport.desc,
+              }}
+              />
+            </div>
+</ScrollSection>
         </ScrollSection>
       </div>
     </section>

@@ -23,8 +23,8 @@ export const WEDDING_DATA = {
     name: "최영재",
     phone: "010-9340-7520",
     account: {
-      bank: "샘플은행",
-      accountNumber: "9876-54-3210987",
+      bank: "우리은행",
+      accountNumber: "1002-262-544977",
       depositor: "최영재",
     },
     parents: {
@@ -108,7 +108,7 @@ export const WEDDING_DATA = {
       eyebrow: "소중한 분들을 초대합니다",
       title: "INVITATION",
       mainText:
-        "서로가 마주보며 다져온 사랑을<br />이제 함께 한 곳을 바라보며<br />걸어갈 수 있는 큰 사랑으로 키우고자 합니다.<br /><br />저희 두 사람이 사랑의 이름으로<br />지켜나갈 수 있게 앞날을<br />축복해 주시면 감사하겠습니다.",
+        "처음 마주한 그 순간,<br />이미 오래전부터 알고 있던 사람처럼 느껴졌습니다.<br /><br />설명할 수 없는 마음이 먼저 다가와,<br />조용한 확신으로 깊이 스며들었습니다.<br /><br />이제 서로의 모든 계절 속을 함께 걸어가려 합니다.<br />가장 빛나는날, 저희의 시작을 함께해 주세요.",
       groomName: "이혁기",
       brideName: "최영재",
       groomParents: "의 아들",
@@ -128,6 +128,12 @@ export const WEDDING_DATA = {
       parking: {
         title: "주차",
         desc: "예식장 지하주차장 B1~B3층 이용 가능",
+      },
+      publicTransport: {
+        title: "대중교통",
+        desc: [
+          "7호선 학동역 10번 출구에서 도보 6분",
+        ],
       },
     },
     contact: {
@@ -159,7 +165,7 @@ export const WEDDING_DATA = {
   // 이미지
   images: {
     main: "/gallery/i9.jpg",
-    background: "/gallery/main.jpg",
+    background: "/gallery/i9.jpg",
     gallery: [
       {
         src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
