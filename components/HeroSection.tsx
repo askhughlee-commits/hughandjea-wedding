@@ -77,9 +77,9 @@ export default function HeroSection() {
           className="pt-10"
         >
           <h1 className="text-6xl md:text-7xl leading-tight heading-script drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]">
-            Happily
+            We're Getting
             <br />
-            Ever After
+            Married
           </h1>
           <p className="mt-4 text-xs tracking-[0.4em] uppercase text-white/80">
             Wedding Invitation
