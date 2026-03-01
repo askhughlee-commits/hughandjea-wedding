@@ -127,13 +127,12 @@ export const WEDDING_DATA = {
       title: "교통안내",
       parking: {
         title: "주차",
-        desc: "예식장 지하주차장 B1~B3층 이용 가능",
+        desc: "예식장 주차타워 이용 가능",
       },
       publicTransport: {
         title: "대중교통",
-        desc: [
+        desc: 
           "7호선 학동역 10번 출구에서 도보 6분",
-        ],
       },
     },
     contact: {
