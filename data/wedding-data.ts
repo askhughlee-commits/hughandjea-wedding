@@ -11,11 +11,11 @@ export const WEDDING_DATA = {
     parents: {
       father: {
         name: "이병익",
-        phone: "010-3228-0214"
+        //phone: "010-3228-0214"
       },
       mother: {
         name: "김미숙",
-        phone: "010-4738-0214"
+        //phone: "010-4738-0214"
       },
     },
   },
@@ -30,11 +30,11 @@ export const WEDDING_DATA = {
     parents: {
       father: {
         name: "최재천",
-        phone: "010-6542-4050",
+        //phone: "010-6542-4050",
       },
       mother: {
         name: "하경심",
-        phone: "010-9722-2374",
+        //phone: "010-9722-2374",
       },
     },
   },
@@ -42,7 +42,7 @@ export const WEDDING_DATA = {
     groom: {
       father: {
         name: "이병익",
-        phone: "010-3228-0214",
+        //phone: "010-3228-0214",
         // account: {
         //     bank: "샘플은행",
         //     accountNumber: "1002-123-456789",
@@ -51,22 +51,22 @@ export const WEDDING_DATA = {
       },
       mother: {
         name: "김미숙",
-        phone: "010-4738-0214",
+        //phone: "010-4738-0214",
       },
     },
     bride: {
       father: {
         name: "최재천",
-        phone: "010-6542-4050",
-        // account: {
-        //     bank: "샘플은행",
-        //     accountNumber: "123-45-6789012",
-        //     depositor: "박상현"
-        // }
+        //phone: "010-6542-4050",
+        account: {
+          bank: "샘플은행",
+          accountNumber: "123-45-6789012",
+          depositor: "최재천"
+        }
       },
       mother: {
         name: "하경심",
-        phone: "010-9722-2374",
+        //phone: "010-9722-2374",
       },
     },
   },
