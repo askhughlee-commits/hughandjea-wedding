@@ -102,7 +102,7 @@ export const WEDDING_DATA = {
       bride: "영재",
       date: "2026.06.14",
       time: "SUN PM 2:00",
-      location: "셀럼앤어셈 / 퓨처스타즈",
+      location: "셀럽앤어셈 / 퓨처스타즈",
     },
     intro: {
       eyebrow: "소중한 분들을 초대합니다",
