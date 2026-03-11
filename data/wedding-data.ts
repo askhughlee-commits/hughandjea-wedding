@@ -67,11 +67,11 @@ export const WEDDING_DATA = {
       mother: {
         name: "하경심",
         //phone: "010-9722-2374",
-        account: {
-          bank: "국민은행",
-          accountNumber: "202-24-0370-264",
-          depositor: "하경심"
-        }
+        //account: {
+        //  bank: "국민은행",
+        //  accountNumber: "202-24-0370-264",
+        //  depositor: "하경심"
+        //}
         
       },
     },
