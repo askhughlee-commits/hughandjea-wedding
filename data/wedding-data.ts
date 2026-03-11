@@ -60,12 +60,13 @@ export const WEDDING_DATA = {
         //phone: "010-6542-4050",
         account: {
           bank: "샘플은행",
-          accountNumber: "123-45-6789012",
+          //accountNumber: "123-45-6789012",
           depositor: "최재천"
         }
       },
       mother: {
         name: "하경심",
+        accountNumber: "202-24-0370-264",
         //phone: "010-9722-2374",
       },
     },
@@ -74,8 +75,8 @@ export const WEDDING_DATA = {
   // 예식 정보
   date: "2026.06.14 SUN PM 2:00",
   venue: {
-    name: "셀럼앤어셈 / 퓨처스타즈",
-    address: "서울특별시 강남구 언주로 711 건설회관 별관 1,2층",
+    name: "셀럼앤어셈",
+    address: "서울특별시 강남구 언주로 711 건설회관 2층",
     phone: "02-545-2222",
     date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
@@ -163,11 +164,12 @@ export const WEDDING_DATA = {
 
   // 이미지
   images: {
-    main: "/gallery/main.jpg",
-    background: "/gallery/main.jpg",
+    main: "/gallery/m01.jpg",
+    background: "/gallery/m01.jpg",
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+        src: "/gallery/01.jpg",
+        //"https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
         alt: "Wedding moment 1",
         isHorizontal: false,
       },
