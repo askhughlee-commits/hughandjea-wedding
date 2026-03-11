@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { withBasePath } from "@/lib/asset";
 
 // Using a list of images with orientation.
 // Pattern: V, V, H, V, V, H... for variety
@@ -113,42 +114,48 @@ export default function GallerySection() {
     >
       {/* Strict 2-column grid on ALL screens */}
       <div className="grid grid-cols-2 gap-[2px] md:gap-[4px]">
-        {galleryImages.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-            viewport={{ once: true, margin: "-10%" }}
-            className={`
+        {galleryImages.map((item, index) => {
+          const resolvedSrc = item.src.startsWith("http")
+            ? item.src
+            : withBasePath(item.src);
+
+          return (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+              viewport={{ once: true, margin: "-10%" }}
+              className={`
               relative cursor-pointer group overflow-hidden bg-gray-100
               ${item.isHorizontal ? "col-span-2 aspect-[4/3]" : "col-span-1 aspect-[3/4]"}
             `}
-            onClick={() => {
-              setDirection(0);
-              setSelectedImage(index);
-            }}
-          >
-            <Image
-              src={item.src}
-              alt={
-                item.alt ||
-                `${WEDDING_DATA.content.gallery.photoAlt} ${index + 1}`
-              }
-              fill
-              className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-              sizes={item.isHorizontal ? "100vw" : "50vw"}
-              quality={85}
-            />
+              onClick={() => {
+                setDirection(0);
+                setSelectedImage(index);
+              }}
+            >
+              <Image
+                src={resolvedSrc}
+                alt={
+                  item.alt ||
+                  `${WEDDING_DATA.content.gallery.photoAlt} ${index + 1}`
+                }
+                fill
+                className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                sizes={item.isHorizontal ? "100vw" : "50vw"}
+                quality={85}
+              />
 
-            {/* Hover Text Reveal */}
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-              <span className="text-white font-serif tracking-widest text-lg uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                {WEDDING_DATA.content.gallery.title}
-              </span>
-            </div>
-          </motion.div>
-        ))}
+              {/* Hover Text Reveal */}
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-white font-serif tracking-widest text-lg uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {WEDDING_DATA.content.gallery.title}
+                </span>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
 
       {/* Lightbox Overlay */}
@@ -202,13 +209,17 @@ export default function GallerySection() {
                 >
                   <div className="relative w-full h-full">
                     <Image
-                      src={galleryImages[selectedImage].src}
+                      src={
+                        galleryImages[selectedImage].src.startsWith("http")
+                          ? galleryImages[selectedImage].src
+                          : withBasePath(galleryImages[selectedImage].src)
+                      }
                       alt={
                         galleryImages[selectedImage].alt ||
                         `${WEDDING_DATA.content.gallery.photoAlt} ${selectedImage + 1}`
                       }
                       fill
-                      className="object-contain select-none pointer-events-none" // prevent image drag behavior
+                      className="object-contain select-none pointer-events-none"
                       quality={100}
                       priority
                       draggable={false}
