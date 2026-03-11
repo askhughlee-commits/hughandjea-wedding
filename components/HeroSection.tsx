@@ -57,7 +57,7 @@ export default function HeroSection() {
           alt="Wedding main photo"
           fill
           priority
-          className="object-cover object-[center_72%]"
+          className="object-cover object-[center_78%] md:object-[center_68%]"
           //className="object-cover object-center"
           sizes="100vw"
         />
