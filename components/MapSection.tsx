@@ -21,16 +21,16 @@ export default function MapSection() {
         <MapMarker position={venue.coordinates}>
           <div
             style={{
-              padding: "2px 6px",
-              color: "#111",
+              padding: "3px 8px",
+              color: "#222",
               fontFamily: "var(--font-sans)",
-              fontSize: "12px",
+              fontSize: "11px",
+              fontWeight: 500,
               lineHeight: 1.2,
               whiteSpace: "nowrap",
+              backgroundColor: "rgba(255,255,255,0.95)",
               borderRadius: "999px",
-              background: "white",
-              border: "1px solid rgba(0,0,0,0.08)",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              border: "1px solid rgba(0,0,0,0.06)",
             }}
           >
             {venue.name}

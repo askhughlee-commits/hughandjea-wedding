@@ -169,7 +169,7 @@ export const WEDDING_DATA = {
 
   // 이미지
   images: {
-    main: "/gallery/20.jpg",
+    main: "/gallery/02.jpg",
     background: "/gallery/20.jpg",
     gallery: [
       {
