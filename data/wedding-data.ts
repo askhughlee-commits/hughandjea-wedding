@@ -59,8 +59,8 @@ export const WEDDING_DATA = {
         name: "최재천",
         //phone: "010-6542-4050",
         account: {
-          bank: "샘플은행",
-          accountNumber: "123-45-6789012",
+          bank: "하나은행",
+          accountNumber: "558-910215-89007",
           depositor: "최재천"
         }
       },
@@ -169,8 +169,8 @@ export const WEDDING_DATA = {
 
   // 이미지
   images: {
-    main: "/gallery/m02.jpg",
-    background: "/gallery/m02.jpg",
+    main: "/gallery/m03.jpg",
+    background: "/gallery/m03.jpg",
     gallery: [
       {
         src: "/gallery/01.jpg",

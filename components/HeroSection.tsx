@@ -52,7 +52,7 @@ export default function HeroSection() {
     >
       {/* m03 */}
       {/* Background Image with Parallax */}
-      {/* <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
+      <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
         <div
           className="absolute inset-0"
           style={{ transform: "translate(5.6%, 16%)" }}
@@ -68,11 +68,11 @@ export default function HeroSection() {
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
-      </div> */}
+      </div>
       
       {/* m02 */}
       {/* Background Image with Parallax */}
-      <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
+      {/* <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
         <div
           className="absolute inset-0"
           style={{ transform: "translateY(8%)" }}
@@ -87,7 +87,7 @@ export default function HeroSection() {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div
