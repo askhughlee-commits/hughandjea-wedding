@@ -176,7 +176,7 @@ export const WEDDING_DATA = {
         src: "/gallery/01.jpg",
         //"https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
         alt: "Wedding moment 1",
-        isHorizontal: false,
+        isHorizontal: true,
       },
       {
         src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80",
