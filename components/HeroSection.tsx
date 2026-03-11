@@ -55,7 +55,7 @@ export default function HeroSection() {
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
         <div
           className="absolute inset-0"
-          style={{ transform: "translate(6%, 10%)" }}
+          style={{ transform: "translate(5.6%, 16%)" }}
         >
           <Image
             src={withBasePath(WEDDING_DATA.images.main)}
