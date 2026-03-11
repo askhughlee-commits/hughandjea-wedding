@@ -86,7 +86,7 @@ export const WEDDING_DATA = {
     date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
       lat: 37.5173,
-      lng: 127.0341,
+      lng: 127.0344,
     },
   },
 
@@ -169,8 +169,8 @@ export const WEDDING_DATA = {
 
   // 이미지
   images: {
-    main: "/gallery/02.jpg",
-    background: "/gallery/20.jpg",
+    main: "/gallery/m02.jpg",
+    background: "/gallery/m20.jpg",
     gallery: [
       {
         src: "/gallery/01.jpg",
