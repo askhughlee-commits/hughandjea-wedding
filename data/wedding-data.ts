@@ -169,8 +169,8 @@ export const WEDDING_DATA = {
 
   // 이미지
   images: {
-    main: "/gallery/m01.jpg",
-    background: "/gallery/m01.jpg",
+    main: "/gallery/20.jpg",
+    background: "/gallery/20.jpg",
     gallery: [
       {
         src: "/gallery/01.jpg",
@@ -287,7 +287,7 @@ export const WEDDING_DATA = {
         isHorizontal: false,
       },
       {
-        src: "/gallery/20.jpg",
+        src: "/gallery/m01.jpg",
         //"https://images.unsplash.com/photo-1530047625168-4b29bfbbe1fc?w=800&q=80",
         alt: "Wedding moment 23",
         isHorizontal: false,
