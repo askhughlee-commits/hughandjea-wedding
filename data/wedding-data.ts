@@ -67,11 +67,11 @@ export const WEDDING_DATA = {
       mother: {
         name: "하경심",
         //phone: "010-9722-2374",
-        //account: {
-        //  bank: "국민은행",
-        //  accountNumber: "202-24-0370-264",
-        //  depositor: "하경심"
-        //}
+        account: {
+          bank: "국민은행",
+          accountNumber: "202-24-0370-264",
+          depositor: "하경심"
+        }
         
       },
     },
@@ -108,7 +108,7 @@ export const WEDDING_DATA = {
       bride: "영재",
       date: "2026.06.14",
       time: "SUN PM 2:00",
-      location: "셀럽앤어셈 / 퓨처스타즈",
+      location: "셀럽앤어셈",
     },
     intro: {
       eyebrow: "소중한 분들을 초대합니다",
@@ -173,8 +173,7 @@ export const WEDDING_DATA = {
     background: "/gallery/m01.jpg",
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
-        // "/gallery/01.jpg",
+        src: "/gallery/01.jpg",
         //"https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
         alt: "Wedding moment 1",
         isHorizontal: false,
