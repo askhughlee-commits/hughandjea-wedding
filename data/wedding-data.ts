@@ -86,7 +86,7 @@ export const WEDDING_DATA = {
     date: "2026년 6월 14일 일요일 오후 2시",
     coordinates: {
       lat: 37.5173,
-      lng: 127.0344,
+      lng: 127.0346,
     },
   },
 

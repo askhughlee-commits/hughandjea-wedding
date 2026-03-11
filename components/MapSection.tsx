@@ -18,24 +18,7 @@ export default function MapSection() {
         level={4}
         style={{ width: "100%", height: "100%" }}
       >
-        <MapMarker position={venue.coordinates}>
-          <div
-            style={{
-              padding: "3px 8px",
-              color: "#222",
-              fontFamily: "var(--font-sans)",
-              fontSize: "11px",
-              fontWeight: 500,
-              lineHeight: 1.2,
-              whiteSpace: "nowrap",
-              backgroundColor: "rgba(255,255,255,0.95)",
-              borderRadius: "999px",
-              border: "1px solid rgba(0,0,0,0.06)",
-            }}
-          >
-            {venue.name}
-          </div>
-        </MapMarker>
+        <MapMarker position={venue.coordinates} />
       </Map>
     </div>
   );
