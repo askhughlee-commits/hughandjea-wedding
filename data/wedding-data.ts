@@ -60,7 +60,7 @@ export const WEDDING_DATA = {
         //phone: "010-6542-4050",
         account: {
           bank: "샘플은행",
-          //accountNumber: "123-45-6789012",
+          accountNumber: "123-45-6789012",
           depositor: "최재천"
         }
       },
