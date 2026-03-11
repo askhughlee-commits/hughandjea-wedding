@@ -57,7 +57,8 @@ export default function HeroSection() {
           alt="Wedding main photo"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-[center_72%]"
+          //className="object-cover object-center"
           sizes="100vw"
         />
         {/* Gradient overlay */}
