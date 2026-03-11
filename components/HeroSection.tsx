@@ -50,8 +50,28 @@ export default function HeroSection() {
       ref={sectionRef}
       className="relative h-[100dvh] w-full flex flex-col overflow-hidden"
     >
+      {/* m03 */}
       {/* Background Image with Parallax */}
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
+        <div
+          className="absolute inset-0"
+          style={{ transform: "translate(6%, 10%)" }}
+        >
+          <Image
+            src={withBasePath(WEDDING_DATA.images.main)}
+            alt="Wedding main photo"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
+      </div>
+      {/* m02 */}
+      {/* Background Image with Parallax */}
+      {/* <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
         <div
           className="absolute inset-0"
           style={{ transform: "translateY(8%)" }}
@@ -66,7 +86,7 @@ export default function HeroSection() {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div
