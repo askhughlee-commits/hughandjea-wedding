@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { gsap } from "@/lib/gsap/register";
+import { gsap, ScrollTrigger } from "@/lib/gsap/register";
 import { WEDDING_DATA } from "@/data/wedding-data";
 import { withBasePath } from "@/lib/asset";
 
@@ -16,7 +16,7 @@ export default function HeroSection() {
     if (!sectionRef.current || !heroTextRef.current || !bgRef.current) return;
 
     const ctx = gsap.context(() => {
-      // Parallax background effect
+      // Parallax background effect - slower scroll
       gsap.to(bgRef.current, {
         y: () => window.innerHeight * 0.3,
         ease: "none",
@@ -28,7 +28,7 @@ export default function HeroSection() {
         },
       });
 
-      // Fade out hero text
+      // Fade out hero text on scroll
       gsap.to(heroTextRef.current, {
         opacity: 0,
         y: -50,
@@ -50,9 +50,9 @@ export default function HeroSection() {
       ref={sectionRef}
       className="relative h-[100dvh] w-full flex flex-col overflow-hidden"
     >
-      {/* Background Image */}
+      {/* m03 */}
+      {/* Background Image with Parallax */}
       <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
-        {/* image wrapper (position adjust) */}
         <div
           className="absolute inset-0"
           style={{ transform: "translate(5.6%, 16%)" }}
@@ -67,25 +67,34 @@ export default function HeroSection() {
           />
         </div>
 
-        {/* TOP gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-transparent pointer-events-none" />
-
-        {/* BOTTOM gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-
-        {/* LEFT gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-transparent pointer-events-none" />
-
-        {/* RIGHT gradient */}
-        <div className="absolute inset-0 bg-gradient-to-l from-black/25 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
       </div>
+      
+      {/* m02 */}
+      {/* Background Image with Parallax */}
+      {/* <div ref={bgRef} className="absolute inset-0 z-0 scale-110">
+        <div
+          className="absolute inset-0"
+          style={{ transform: "translateY(8%)" }}
+        >
+          <Image
+            src={withBasePath(WEDDING_DATA.images.main)}
+            alt="Wedding main photo"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
+      </div> */}
 
       {/* Content */}
       <div
         ref={heroTextRef}
         className="relative z-10 flex-1 flex flex-col justify-between items-center px-6 md:px-10 text-white text-center py-20"
       >
-        {/* Title */}
+        {/* Title at top - Large script style */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -97,14 +106,14 @@ export default function HeroSection() {
             <br />
             Married
           </h1>
-
           <p className="mt-4 text-xs tracking-[0.4em] uppercase text-white/80">
             Wedding Invitation
           </p>
         </motion.div>
 
-        {/* Names */}
+        {/* Names, date and venue at bottom */}
         <div className="space-y-6 pb-10">
+          {/* Names with separator */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -117,7 +126,7 @@ export default function HeroSection() {
             </h2>
           </motion.div>
 
-          {/* Date */}
+          {/* Date and venue */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -127,7 +136,6 @@ export default function HeroSection() {
             <p className="text-base md:text-lg tracking-[0.2em] uppercase">
               {WEDDING_DATA.content.hero.date} {WEDDING_DATA.content.hero.time}
             </p>
-
             <p className="text-sm md:text-base tracking-[0.2em] uppercase opacity-90">
               {WEDDING_DATA.content.hero.location}
             </p>
