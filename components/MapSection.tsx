@@ -7,7 +7,7 @@ export default function MapSection() {
   const { venue } = WEDDING_DATA;
 
   const [loading, error] = useKakaoLoader({
-    appkey: "71fb1a03f2b03cb5f6f697f5a3c5303b",
+    appkey: process.env.NEXT_PUBLIC_KAKAO_APP_KEY || "",
     libraries: ["services", "clusterer"],
   });
 
