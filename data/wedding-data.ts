@@ -173,19 +173,19 @@ export const WEDDING_DATA = {
     background: "/gallery/m03.jpg",
     gallery: [
       {
-        src: "/gallery/01.jpg",
+        src: "/gallery/m01.jpg",
         //"https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
         alt: "Wedding moment 1",
         isHorizontal: false,
       },
       {
-        src: "/gallery/m01.jpg",
+        src: "/gallery/27.jpg",
         //"https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=80",
         alt: "Wedding moment 5",
         isHorizontal: false,
       },
       {
-        src: "/gallery/27.jpg",
+        src: "/gallery/01.jpg",
         //"https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1200&q=80",
         alt: "Wedding moment 6",
         isHorizontal: true,
