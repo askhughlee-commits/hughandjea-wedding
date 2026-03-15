@@ -4,7 +4,7 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { withBasePath } from "@/lib/asset";
+//  import { withBasePath } from "@/lib/asset";
 
 // Using a list of images with orientation.
 // Pattern: V, V, H, V, V, H... for variety
@@ -115,9 +115,10 @@ export default function GallerySection() {
       {/* Strict 2-column grid on ALL screens */}
       <div className="grid grid-cols-2 gap-[2px] md:gap-[4px]">
         {galleryImages.map((item, index) => {
-          const resolvedSrc = item.src.startsWith("http")
-            ? item.src
-            : withBasePath(item.src);
+          const resolvedSrc = item.src;
+          // const resolvedSrc = item.src.startsWith("http")
+          //   ? item.src
+          //   : withBasePath(item.src);
 
           return (
             <motion.div
@@ -209,15 +210,20 @@ export default function GallerySection() {
                 >
                   <div className="relative w-full h-full">
                     <Image
-                      src={
-                        galleryImages[selectedImage].src.startsWith("http")
-                          ? galleryImages[selectedImage].src
-                          : withBasePath(galleryImages[selectedImage].src)
-                      }
+                      src={galleryImages[selectedImage].src}
                       alt={
                         galleryImages[selectedImage].alt ||
                         `${WEDDING_DATA.content.gallery.photoAlt} ${selectedImage + 1}`
                       }
+                      // src={
+                      //   galleryImages[selectedImage].src.startsWith("http")
+                      //     ? galleryImages[selectedImage].src
+                      //     : withBasePath(galleryImages[selectedImage].src)
+                      // }
+                      // alt={
+                      //   galleryImages[selectedImage].alt ||
+                      //   `${WEDDING_DATA.content.gallery.photoAlt} ${selectedImage + 1}`
+                      // }
                       fill
                       className="object-contain select-none pointer-events-none"
                       quality={100}
