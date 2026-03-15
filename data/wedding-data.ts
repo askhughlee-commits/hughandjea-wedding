@@ -179,13 +179,13 @@ export const WEDDING_DATA = {
         isHorizontal: false,
       },
       {
-        src: "/gallery/27.jpg",
+        src: "/gallery/m01.jpg",
         //"https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=80",
         alt: "Wedding moment 5",
         isHorizontal: false,
       },
       {
-        src: "/gallery/m01.jpg",
+        src: "/gallery/27.jpg",
         //"https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1200&q=80",
         alt: "Wedding moment 6",
         isHorizontal: true,
@@ -209,7 +209,7 @@ export const WEDDING_DATA = {
         isHorizontal: true,
       },
       {
-        src: "/gallery/15.jpg",
+        src: "/gallery/04.jpg",
         //"https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80",
         alt: "Wedding moment 10",
         isHorizontal: false,
@@ -221,7 +221,7 @@ export const WEDDING_DATA = {
         isHorizontal: false,
       },
       {
-        src: "/gallery/04.jpg",
+        src: "/gallery/15.jpg",
         //"https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=1200&q=80",
         alt: "Wedding moment 12",
         isHorizontal: true,
