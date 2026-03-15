@@ -7,17 +7,25 @@ export default function MapSection() {
   const { venue } = WEDDING_DATA;
 
   const [loading, error] = useKakaoLoader({
-    appkey: process.env.NEXT_PUBLIC_KAKAO_APP_KEY || "",
+    appkey: "71fb1a03f2b03cb5f6f697f5a3c5303b",
     libraries: ["services", "clusterer"],
   });
 
   if (loading) {
-    return <div className="w-full soft-card overflow-hidden h-[360px] flex items-center justify-center">지도 불러오는 중...</div>;
+    return (
+      <div className="w-full soft-card overflow-hidden h-[360px] flex items-center justify-center">
+        지도 불러오는 중...
+      </div>
+    );
   }
 
   if (error) {
     console.error("Kakao map load error:", error);
-    return <div className="w-full soft-card overflow-hidden h-[360px] flex items-center justify-center">카카오맵 로드 실패</div>;
+    return (
+      <div className="w-full soft-card overflow-hidden h-[360px] flex items-center justify-center">
+        카카오맵 로드 실패
+      </div>
+    );
   }
 
   return (
