@@ -11,10 +11,10 @@ export default function FooterSection() {
           ♥
         </div>
         <p className="text-sm text-[var(--color-text-light)]">
-          {WEDDING_DATA.content.footer.copyright}
+          © 2026 {WEDDING_DATA.groom.name} & {WEDDING_DATA.bride.name}
         </p>
         <p className="text-xs text-[var(--color-text-light)] mt-6 opacity-60">
-          © 2026 {WEDDING_DATA.groom.name} & {WEDDING_DATA.bride.name}
+          {WEDDING_DATA.content.footer.copyright}
         </p>
       </AnimatedSection>
     </footer>
