@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { gsap, ScrollTrigger } from "@/lib/gsap/register";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { withBasePath } from "@/lib/asset";
+//  import { withBasePath } from "@/lib/asset";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -58,7 +58,8 @@ export default function HeroSection() {
           style={{ transform: "translate(5.6%, 16%)" }}
         >
           <Image
-            src={withBasePath(WEDDING_DATA.images.main)}
+            // src={withBasePath(WEDDING_DATA.images.main)}
+            src={WEDDING_DATA.images.main}
             alt="Wedding main photo"
             fill
             priority
@@ -69,7 +70,7 @@ export default function HeroSection() {
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-black/50" />
       </div>
-      
+
       {/* m02 */}
       {/* Background Image with Parallax */}
       {/* <div ref={bgRef} className="absolute inset-0 z-0 scale-110">

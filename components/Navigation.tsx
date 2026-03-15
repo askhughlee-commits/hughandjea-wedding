@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { withBasePath } from "@/lib/asset";
+//  import { withBasePath } from "@/lib/asset";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,8 @@ export default function Navigation() {
             className="fixed inset-0 z-[60] text-white flex flex-col justify-center items-center bg-black"
           >
             <Image
-              src={withBasePath(WEDDING_DATA.images.background)}
+              //  src={withBasePath(WEDDING_DATA.images.background)}
+              src={WEDDING_DATA.images.background}
               alt="Menu Background"
               fill
               className="object-cover"
