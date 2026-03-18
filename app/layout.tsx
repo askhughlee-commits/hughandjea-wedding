@@ -14,10 +14,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "혁기 ❤️ 영재 결혼식에 초대합니다",
-  description: "2026년 6월 14일 오후 2시 셀럼앤어셈",
+  description: "2026년 6월 14일 오후 2시 셀럽앤어셈",
   openGraph: {
     title: "혁기 ❤️ 영재 결혼식에 초대합니다",
-    description: "2026년 6월 14일 오후 2시 셀럼앤어셈",
+    description: "2026년 6월 14일 오후 2시 셀럽앤어셈",
     type: "website",
   },
 };

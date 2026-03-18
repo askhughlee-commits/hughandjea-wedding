@@ -80,7 +80,7 @@ export const WEDDING_DATA = {
   // 예식 정보
   date: "2026.06.14 SUN PM 2:00",
   venue: {
-    name: "셀럼앤어셈",
+    name: "셀럽앤어셈",
     address: "서울특별시 강남구 언주로 711 건설회관 2층",
     phone: "02-545-2222",
     date: "2026년 6월 14일 일요일 오후 2시",
@@ -133,7 +133,7 @@ export const WEDDING_DATA = {
       title: "교통안내",
       parking: {
         title: "주차",
-        desc: "예식장 주차타워 이용 가능",
+        desc: "웨딩홀 주차장 이용 가능",
       },
       publicTransport: {
         title: "대중교통",
