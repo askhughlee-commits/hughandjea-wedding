@@ -4,6 +4,7 @@ import "@/lib/gsap/register";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import SmoothScroll from "@/components/SmoothScroll";
+import BGMPlayer from "@/components/BGMPlayer";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -42,6 +43,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <BGMPlayer />
         <SmoothScroll />
         {children}
         <Analytics />
