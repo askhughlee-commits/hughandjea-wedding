@@ -8,7 +8,7 @@ export default function BGMPlayer() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const audio = new Audio(withBasePath("/music/public/music/paulyudin-romantic-wedding-piano-160698.mp3"));
+    const audio = new Audio(withBasePath("/music/paulyudin-romantic-wedding-piano-160698.mp3"));
     audio.loop = true;
     audio.preload = "auto";
     audio.volume = 0;
